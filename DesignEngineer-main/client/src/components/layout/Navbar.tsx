@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
 import { useTheme } from "next-themes";
-import amAvatar from "@assets/generated_images/am_avatar.png";
+import amAvatar from "@assets/generated_images/am_avatar_new.png";
 
 const navLinks = [
   { name: "Home", to: "home" },

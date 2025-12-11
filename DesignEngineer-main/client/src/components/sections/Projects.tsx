@@ -27,6 +27,7 @@ import salaryPredictionRfImage from "@assets/generated_images/salary_prediction_
 import heartDiseasePredictionMlImage from "@assets/generated_images/heart_disease_prediction_ml.png";
 import parkinsonDiseaseDetectionRfImage from "@assets/generated_images/parkinson_disease_detection_rf.png";
 import heartDiseaseMlCompareImage from "@assets/generated_images/heart_disease_prediction_ml_compare.png";
+import aiTuwaiqSyncV2Image from "@assets/generated_images/ai_tuwaiq_sync_v2.jpg";
 
 const aiProjects = [
   {
@@ -35,6 +36,13 @@ const aiProjects = [
     stack: ["Flask", "Python", "OpenAI"],
     image: mqsdProjectImage,
     githubUrl: "https://github.com/Abdulrahman-Mahnashi/mqsd-travel-app-main",
+  },
+  {
+    title: "AI Tuwaiq Sync v2",
+    description: "AI-powered platform with agentic AI capabilities and modern architecture.",
+    stack: ["TypeScript", "React", "AI", "Vercel"],
+    image: aiTuwaiqSyncV2Image,
+    githubUrl: "https://github.com/Abdulrahman-Mahnashi/ai-tuwaiq-sync-v2",
   },
   {
     title: "Heart Disease Prediction",
