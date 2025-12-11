@@ -43,7 +43,7 @@ export function Certificates() {
           </h3>
         </motion.div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
           {certificates.map((cert, index) => {
             // Links for certificates
             const certLink = cert.title === "Advanced Artificial Intelligence" && cert.provider === "KAUST Academy"
@@ -102,7 +102,7 @@ export function Certificates() {
                   {isKaustAI || isIBMAI || isTuwaiq || isCourseraMathML || isDataCampML || isCourseraPythonBasics || isCourseraDataCollection || isCourseraPythonFunctions || isUdemyHtmlPythonFlask || isCourseraInnovationModels || isForwardProgramMcKinsey ? (
                     // Image-based certificate card
                     <Card 
-                      className="h-full bg-card border-border rounded-xl overflow-hidden group p-0 relative cursor-pointer"
+                      className="h-full bg-card border-border rounded-lg sm:rounded-xl overflow-hidden group p-0 relative cursor-pointer"
                       style={{
                         boxShadow: '0 0 30px rgba(45, 212, 191, 0.2)',
                       }}
@@ -123,7 +123,7 @@ export function Certificates() {
                       
                       <div className="relative z-10">
                         <motion.div
-                          className="relative overflow-hidden rounded-t-xl max-h-48"
+                          className="relative overflow-hidden rounded-t-xl"
                           whileHover={{
                             scale: 1.05,
                           }}
@@ -144,8 +144,7 @@ export function Certificates() {
                               kaustCertImage
                             } 
                             alt={cert.title}
-                            className="w-full h-full object-cover"
-                            style={{ maxHeight: '200px' }}
+                            className="w-full h-32 sm:h-40 md:h-48 object-cover"
                           />
                           <motion.div
                             className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-0 group-hover:opacity-100"
@@ -153,10 +152,10 @@ export function Certificates() {
                           />
                         </motion.div>
                         
-                        <div className="p-4 bg-card">
-                          <div className="flex items-start gap-3">
+                        <div className="p-2 sm:p-3 md:p-4 bg-card">
+                          <div className="flex items-start gap-2 sm:gap-3">
                             <motion.div
-                              className="p-2 bg-background rounded-lg border border-primary/30 flex-shrink-0"
+                              className="p-1.5 sm:p-2 bg-background rounded-lg border border-primary/30 flex-shrink-0"
                               whileHover={{
                                 scale: 1.2,
                                 rotate: 360,
@@ -165,28 +164,28 @@ export function Certificates() {
                                 boxShadow: '0 0 15px rgba(45, 212, 191, 0.5)',
                               }}
                             >
-                              <Award className="w-4 h-4 text-primary" />
+                              <Award className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                             </motion.div>
-                            <div className="flex-1">
+                            <div className="flex-1 min-w-0">
                               <motion.h4
-                                className="font-bold text-foreground text-sm group-hover:text-primary transition-colors leading-tight mb-1"
+                                className="font-bold text-foreground text-xs sm:text-sm group-hover:text-primary transition-colors leading-tight mb-1 line-clamp-2"
                                 whileHover={{
                                   textShadow: '0 0 15px rgba(45, 212, 191, 0.8)',
                                 }}
                               >
                                 {cert.title}
                               </motion.h4>
-                              <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                                <span>{cert.provider}</span>
+                              <div className="flex items-center gap-1.5 sm:gap-2 text-[10px] sm:text-xs text-muted-foreground flex-wrap">
+                                <span className="truncate">{cert.provider}</span>
                                 {cert.year && (
                                   <>
-                                    <span className="w-1 h-1 rounded-full bg-slate-600" />
-                                    <span>{cert.year}</span>
+                                    <span className="w-0.5 sm:w-1 h-0.5 sm:h-1 rounded-full bg-slate-600 flex-shrink-0" />
+                                    <span className="flex-shrink-0">{cert.year}</span>
                                   </>
                                 )}
                               </div>
                               <motion.div
-                                className="mt-2 text-xs text-primary opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1"
+                                className="mt-1.5 sm:mt-2 text-[10px] sm:text-xs text-primary opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1"
                                 animate={{
                                   x: [0, 5, 0],
                                 }}
@@ -206,7 +205,7 @@ export function Certificates() {
                   ) : (
                     // Regular certificate card
                     <Card 
-                      className={`h-full bg-card border-border rounded-xl overflow-hidden group p-4 relative ${
+                      className={`h-full bg-card border-border rounded-lg sm:rounded-xl overflow-hidden group p-2 sm:p-3 md:p-4 relative ${
                         certLink ? 'cursor-pointer' : 'cursor-default'
                       }`}
                       style={{
@@ -232,9 +231,9 @@ export function Certificates() {
                         }}
                       />
                       
-                      <div className="flex items-start gap-3 relative z-10">
+                      <div className="flex items-start gap-2 sm:gap-3 relative z-10">
                         <motion.div
-                          className="p-2 bg-background rounded-lg border border-border flex-shrink-0 relative overflow-hidden"
+                          className="p-1.5 sm:p-2 bg-background rounded-lg border border-border flex-shrink-0 relative overflow-hidden"
                           whileHover={{
                             scale: 1.2,
                             rotate: 360,
@@ -247,29 +246,29 @@ export function Certificates() {
                             className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 opacity-0 group-hover:opacity-100"
                             transition={{ duration: 0.3 }}
                           />
-                          <Award className="w-4 h-4 text-primary relative z-10" />
+                          <Award className="w-3 h-3 sm:w-4 sm:h-4 text-primary relative z-10" />
                         </motion.div>
-                        <div className="flex-1">
+                        <div className="flex-1 min-w-0">
                           <motion.h4
-                            className="font-bold text-foreground text-sm group-hover:text-primary transition-colors leading-tight mb-1"
+                            className="font-bold text-foreground text-xs sm:text-sm group-hover:text-primary transition-colors leading-tight mb-1 line-clamp-2"
                             whileHover={{
                               textShadow: '0 0 15px rgba(45, 212, 191, 0.8)',
                             }}
                           >
                             {cert.title}
                           </motion.h4>
-                          <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                            <span>{cert.provider}</span>
+                          <div className="flex items-center gap-1.5 sm:gap-2 text-[10px] sm:text-xs text-muted-foreground flex-wrap">
+                            <span className="truncate">{cert.provider}</span>
                             {cert.year && (
                               <>
-                                <span className="w-1 h-1 rounded-full bg-slate-600" />
-                                <span>{cert.year}</span>
+                                <span className="w-0.5 sm:w-1 h-0.5 sm:h-1 rounded-full bg-slate-600 flex-shrink-0" />
+                                <span className="flex-shrink-0">{cert.year}</span>
                               </>
                             )}
                           </div>
                           {certLink && (
                             <motion.div
-                              className="mt-2 text-xs text-primary opacity-0 group-hover:opacity-100 transition-opacity"
+                              className="mt-1.5 sm:mt-2 text-[10px] sm:text-xs text-primary opacity-0 group-hover:opacity-100 transition-opacity"
                               animate={{
                                 x: [0, 5, 0],
                               }}
