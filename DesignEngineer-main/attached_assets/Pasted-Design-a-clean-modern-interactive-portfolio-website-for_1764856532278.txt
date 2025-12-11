@@ -1,0 +1,165 @@
+Design a clean, modern, interactive portfolio website for **Abdulrahman Mahnashi**. 
+Base the content ONLY on his CV, keep the text short and simple, but make the UI visually rich with smooth animations and interactive elements.
+
+================================
+1) STYLE & COLOR SYSTEM
+================================
+• Light modern theme (not plain white).
+• Use soft, fresh, futuristic colors:
+  - Background: #F4F7FB (cloud blue-gray)
+  - Primary: #5A7DFE (lavender blue)
+  - Secondary: #8A95FF (soft purple)
+  - Accent: #4CC9F0 (aqua blue)
+  - Text: #1E293B (slate)
+• Soft shadows, rounded edges, glass-like cards.
+
+================================
+2) INTERACTIVITY & ANIMATION (VERY IMPORTANT)
+================================
+Add smooth, premium animations such as:
+
+• Hero section:
+  - Text fade-in + slight upward motion
+  - Subtle animated background shapes (floating circles or gradients)
+  - Smooth scale-on-hover for buttons
+
+• Section transitions:
+  - Fade + slide animation when scrolling into each section
+  - Staggered card animations for Skills, Projects, Experience
+
+• Projects:
+  - Cards lift slightly on hover (3D feel)
+  - Tech stack chips animate in (fade/slide)
+  - Subtle hover glow on edges
+
+• Skills:
+  - Chips with interaction (hover color change + small bounce)
+  - Category titles slide in from left
+
+• Experience:
+  - Cards animate in from alternating sides
+  - Icons pulse softly on hover
+
+• Contact:
+  - Inputs highlight with a glowing border on focus
+  - Submit button has a soft hover animation
+
+Animations should be:
+• Smooth
+• Fast (200–350ms)
+• Professional, not cartoonish
+
+================================
+3) CONTENT (SHORT LIKE CV)
+================================
+Use ONLY minimal text based on the CV.
+
+=========================
+HERO SECTION
+=========================
+• Name: **Abdulrahman Mahnashi**
+• Title: **Data & AI Engineer**
+• One short sentence:
+  "Building AI models and modern ELT pipelines."
+• Buttons:
+  - “Projects”
+  - “Download CV”
+• Animated background shapes (subtle, floating)
+
+=========================
+ABOUT SECTION
+=========================
+Use bullet points, not paragraphs:
+
+• CS Graduate (AI Track) — 2025  
+• Experience in AI, ML, GenAI  
+• Skilled in Python, SQL, dbt, Snowflake  
+• Worked on AI models + ELT pipelines  
+• Based in Riyadh, Saudi Arabia  
+
+Add a soft left-to-right animation for bullets.
+
+=========================
+SKILLS (Interactive Grid)
+=========================
+Show as animated chips/cards:
+
+Programming: Python, SQL, Java  
+AI & ML: TensorFlow, Keras, Scikit-learn, LLMs  
+Data Engineering: dbt, Snowflake, ETL/ELT, Kimball Modeling  
+Data Science: Pandas, NumPy, Power BI  
+Tools: Flask, Git/GitHub, APIs, Jupyter  
+
+Chips should lift slightly + glow on hover.
+
+=========================
+EXPERIENCE (Short Cards)
+=========================
+Each card includes title + company + one-line summary:
+
+• NOZOM — AI & Data Engineering Intern  
+  “Supported AI models and dbt + Snowflake pipelines.”
+
+• STC — AI & Data Analytics Trainee  
+  “Automated analytics and prepared ML datasets.”
+
+• Fada Tech Initiative — Tech & Innovation Leader  
+  “Led AI and tech community projects.”
+
+• GDSC — Technical Project Management Member  
+  “Coordinated student AI projects.”
+
+Cards animate into view with alternating slide directions.
+
+=========================
+PROJECTS (3–5 Cards)
+=========================
+Use animated hover effects + stacked fade-in animation.
+
+1) MQSD – AI Trip Planner  
+   “LLM-based itinerary generator.”  
+   Tech: Python, Flask, OpenAI
+
+2) Modern Data Pipeline (dbt + Snowflake)  
+   “Raw → staging → marts ELT modeling.”  
+   Tech: dbt, Snowflake, SQL
+
+3) Heart Disease Prediction  
+   “ML risk prediction model.”  
+   Tech: scikit-learn
+
+4) Parkinson’s Voice Classification  
+   “Voice-based ML detection.”  
+   Tech: Python
+
+5) Fashion-MNIST Classifier  
+   “CNN clothing recognition model.”  
+   Tech: TensorFlow
+
+Project cards should float slightly on hover with shadow expansion.
+
+=========================
+CONTACT SECTION
+=========================
+Keep simple and animated:
+
+• Inputs with glow border on focus  
+• Light floating icons for GitHub + LinkedIn  
+• Button hover animation (scale + glow)
+
+Fields:
+Name  
+Email  
+Message  
+
+================================
+4) GENERAL RULES
+================================
+• Keep all wording short, clean, and aligned with CV.  
+• Do NOT add long paragraphs or storytelling.  
+• Use animations to make the site feel alive, but stay professional.  
+• Maintain consistent spacing and clean structure.  
+• The final design should look premium, interactive, and modern — but still simple.
+
+================================
+Generate the full design now with these exact instructions.

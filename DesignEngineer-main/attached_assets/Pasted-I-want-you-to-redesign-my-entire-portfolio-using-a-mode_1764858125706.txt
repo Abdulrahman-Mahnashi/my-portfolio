@@ -1,0 +1,164 @@
+I want you to redesign my entire portfolio using a modern, premium dark aesthetic with soft neon colors (aqua + blue), inspired by high-end Saudi developer portfolios. 
+Keep the content short like a CV, clean, and professional. 
+Add smooth animations and interactive elements.
+
+==========================
+1) COLOR SYSTEM
+==========================
+• Background: #0D1117  
+• Card Background: #111827  
+• Primary: #2DD4BF (aqua)  
+• Secondary: #3B82F6 (soft neon blue)  
+• Text: #F1F5F9 (light)  
+• Border Glow: use aqua/blue neon on hover  
+• Shadows: soft + minimal  
+
+==========================
+2) ANIMATIONS
+==========================
+• Hero fade-in + slide  
+• Floating particles behind avatar  
+• Cards lift slightly on hover  
+• Neon border glow interaction  
+• Skills chips: glow + scale on hover  
+• Section headers slide up + fade  
+• All animations smooth (200–350ms)
+
+==========================
+3) HERO SECTION
+==========================
+Name: Abdulrahman Mahnashi  
+Title: Data & AI Engineer  
+Tagline: “Building AI models and modern Data Pipelines.”
+
+Buttons:
+• View Projects (primary neon glow)
+• Download CV (outline neon)
+
+Use circular avatar frame with subtle neon ring.
+
+==========================
+4) ABOUT SECTION
+==========================
+Short bullet points only:
+
+• CS Graduate (AI Track), 2025  
+• Experience in AI, ML, GenAI, and Data Engineering  
+• Skilled in Python, SQL, TensorFlow, dbt, Snowflake  
+• Worked on AI models + ELT pipelines  
+• Based in Riyadh  
+
+Minimal layout + avatar to the right.
+
+==========================
+5) SKILLS SECTION
+==========================
+Show glowing chips:
+
+AI & ML:
+• TensorFlow • Keras • Scikit-learn • LLMs  
+
+Data Engineering:
+• dbt • Snowflake • ETL/ELT • SQL • Kimball Modeling  
+
+Programming:
+• Python • SQL • Java  
+
+Tools:
+• Flask • Git/GitHub • APIs • Jupyter  
+
+Hover animation: glow + slight scale.
+
+==========================
+6) EXPERIENCE SECTION
+==========================
+Short clean cards:
+
+• NOZOM — AI & Data Engineering Intern  
+  “Improved AI models + dbt/Snowflake pipelines.”
+
+• STC — AI & Data Analytics Trainee  
+  “Automated analytics + prepared ML datasets.”
+
+• Fada Tech — Tech & Innovation Leader  
+  “Led AI-driven community projects.”
+
+• GDSC — Project Management Member  
+  “Coordinated student AI initiatives.”
+
+Neon left-border effect on hover.
+
+==========================
+7) PROJECTS SECTION
+==========================
+Use neon-bordered cards with icons:
+
+1) MQSD – AI Trip Planner  
+   “LLM itinerary generator.”  
+   Tech: Flask, Python, OpenAI
+
+2) Modern Data Pipeline (dbt + Snowflake)  
+   “Raw → staging → marts ELT.”  
+   Tech: dbt, Snowflake, SQL
+
+3) Heart Disease Prediction  
+   “ML risk model.”  
+   Tech: scikit-learn
+
+4) Parkinson's Voice Classification  
+   “Detecting Parkinson’s via voice.”  
+   Tech: Python
+
+5) Fashion-MNIST Classifier  
+   “CNN image classifier.”  
+   Tech: TensorFlow
+
+==========================
+8) CERTIFICATES SECTION (NEW)
+==========================
+Add a section titled: **Certificates & Training**
+
+Use small neon-glow cards (3–4 per row).  
+Each card: icon + title + provider + year.
+
+Certificates list:
+
+• Advanced Artificial Intelligence — KAUST Academy (2024)  
+• Artificial Intelligence Fundamentals — IBM (2024)  
+• Relational Database Design & Querying — Tuwaiq (2025)  
+• Mathematics for ML & Data Science — Coursera (2023)  
+• Understanding Machine Learning — DataCamp (2024)  
+• Python Basics — Coursera (2023)  
+• Data Collection & Processing with Python — Coursera (2023)  
+• Python Functions, Files & Dictionaries — Coursera (2023)  
+• CDMP (Data Management Fundamentals) — Exam Prep (2025)  
+• Data Science Certificate — KAUST Academy (2024)  
+• Cyber Security Bootcamp — GDSC (2021)  
+• HTML/Python/Flask All-in-One — Udemy (2024)  
+• JavaScript 101 — SAFCSP  
+• Innovation Models — Coursera (2024)
+
+Cards animate with fade+rise, neon glow on hover.
+
+==========================
+9) CONTACT SECTION
+==========================
+Simple neon contact cards:
+
+Email  
+Phone  
+LinkedIn button  
+GitHub button  
+
+Add glowing hover effects.
+
+==========================
+10) FINAL RULES
+==========================
+• Match the vibe and neatness of the sample portfolio.  
+• Do NOT add long text.  
+• Keep everything compact, resume-like.  
+• Use clean neon dark theme exactly as described.  
+• Make animations elegant and subtle.
+
+Build the full design now.
