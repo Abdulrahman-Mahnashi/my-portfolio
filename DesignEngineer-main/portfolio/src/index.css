@@ -1,0 +1,203 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+  
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+}
+
+:root {
+  /* Background: Dark Navy #0D1117 */
+  --background: 216 28% 7%;
+  --foreground: 210 40% 96%; /* #F1F5F9 */
+
+  /* Card: Deep Blue-Gray #111827 */
+  --card: 220 39% 11%;
+  --card-foreground: 210 40% 96%;
+
+  --popover: 220 39% 11%;
+  --popover-foreground: 210 40% 96%;
+
+  /* Primary Accent: Aqua/Mint #2DD4BF */
+  --primary: 173 65% 50%;
+  --primary-foreground: 216 28% 7%;
+
+  /* Secondary Accent: Soft Neon Blue #3B82F6 */
+  --secondary: 217 91% 60%;
+  --secondary-foreground: 210 40% 96%;
+
+  /* Muted: Darker Blue-Gray */
+  --muted: 217 33% 17%;
+  --muted-foreground: 215 25% 84%; /* #CBD5E1 */
+
+  /* Accent: Aqua/Mint for highlighting */
+  --accent: 173 65% 50%;
+  --accent-foreground: 216 28% 7%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 96%;
+
+  --border: 217 33% 20%;
+  --input: 220 39% 15%;
+  --ring: 173 65% 50%;
+
+  --radius: 0.75rem;
+}
+
+.light {
+  /* Background: Light Gray #F8FAFC */
+  --background: 210 40% 98%;
+  --foreground: 216 28% 7%; /* #0D1117 */
+
+  /* Card: White #FFFFFF */
+  --card: 0 0% 100%;
+  --card-foreground: 216 28% 7%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 216 28% 7%;
+
+  /* Primary Accent: Aqua/Mint #2DD4BF */
+  --primary: 173 65% 50%;
+  --primary-foreground: 0 0% 100%;
+
+  /* Secondary Accent: Soft Neon Blue #3B82F6 */
+  --secondary: 217 91% 60%;
+  --secondary-foreground: 0 0% 100%;
+
+  /* Muted: Light Gray */
+  --muted: 210 40% 96%;
+  --muted-foreground: 215 25% 27%; /* #475569 */
+
+  /* Accent: Aqua/Mint for highlighting */
+  --accent: 173 65% 50%;
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --ring: 173 65% 50%;
+
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-sans antialiased bg-background text-foreground selection:bg-primary/20 selection:text-primary;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+  
+  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    @apply text-white;
+  }
+  
+  .light h1, .light h2, .light h3, .light h4, .light h5, .light h6 {
+    @apply text-foreground;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-[#111827]/80 backdrop-blur-md border border-[#1F2937] shadow-xl;
+  }
+  
+  .glass-card {
+    @apply bg-[#111827] rounded-2xl border border-[#1F2937] shadow-lg transition-all duration-300;
+  }
+  
+  .text-gradient-primary {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+  }
+
+  .neon-glow {
+    @apply shadow-[0_0_15px_rgba(45,212,191,0.3)];
+  }
+
+  .neon-border-hover {
+    @apply hover:border-primary/50 hover:shadow-[0_0_15px_rgba(45,212,191,0.2)] transition-all duration-300;
+  }
+}
+
+@keyframes gridMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(50px, 50px);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(45, 212, 191, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(45, 212, 191, 0.8), 0 0 60px rgba(45, 212, 191, 0.4);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 5s ease infinite;
+}

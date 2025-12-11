@@ -1,0 +1,139 @@
+Design a clean, modern, light-themed portfolio website for **Abdulrahman Mahnashi**, using ONLY the essential information from his CV. 
+The site must feel professional, minimal, and modern — not too simple, not overloaded. 
+Use light, fresh, modern colors (not pure white): soft blue, light lavender, soft gray, and subtle gradients.
+
+===========================
+1) OVERALL STYLE & COLORS
+===========================
+• Light modern theme, NOT pure white.
+• Use this palette:
+  - Background: #F4F7FB (soft cloud gray-blue)
+  - Surface / Cards: #FFFFFF with very soft borders (#E6EBF2)
+  - Primary: #5A7DFE (lavender-blue)
+  - Secondary: #8A95FF (soft purple)
+  - Accent: #4CC9F0 (aqua blue highlight)
+  - Text: #1E293B (dark slate)
+• Use soft shadows + smooth rounded corners.
+• Keep layout clean, airy, and visually elegant.
+
+===========================
+2) CONTENT RULE (IMPORTANT)
+===========================
+Use ONLY the information from the CV in short form.
+No long paragraphs.
+No storytelling.
+Use brief bullet points like in a clean resume website.
+
+Everything must be simple, readable, and instantly clear.
+
+===========================
+3) HERO SECTION (Simple + Professional)
+===========================
+Include:
+• Name: **Abdulrahman Mahnashi**
+• Title: **Data & AI Engineer**
+• One short CV-style summary:
+  "Building practical AI solutions and modern data pipelines."
+• Buttons:
+  - “Projects”
+  - “Download CV”
+• Light abstract shapes in the background (blue/purple tones)
+
+===========================
+4) ABOUT SECTION (Brief, From CV)
+===========================
+Show *only* these bullets inspired by the CV:
+
+• Computer Science graduate (AI Track), Jazan University — 2025  
+• Experience in Machine Learning, AI systems, and Data Engineering  
+• Skilled in Python, SQL, dbt, Snowflake, TensorFlow, scikit-learn  
+• Worked on AI, GenAI, and ELT pipelines  
+• Based in Riyadh, Saudi Arabia  
+
+Make this section light, concise, and visually balanced.
+
+===========================
+5) SKILLS (Clean CV-style Chips)
+===========================
+Group skills but keep everything SHORT:
+
+**Programming:** Python, SQL, Java  
+**AI & ML:** TensorFlow, Keras, Scikit-learn, LLMs, GenAI  
+**Data Engineering:** dbt, Snowflake, ETL/ELT, Data Modeling (Kimball)  
+**Data Science:** Pandas, NumPy, Power BI  
+**Tools:** Flask, Git/GitHub, APIs, Jupyter Notebook  
+
+Show them as rounded chips/cards in a light grid.
+
+===========================
+6) EXPERIENCE (Short + Minimal)
+===========================
+Use clean cards with ONLY job title, company, and one-line summary:
+
+• NOZOM — AI & Data Engineering Intern  
+  “Improved AI models and supported data pipelines using dbt + Snowflake.”
+
+• STC — AI & Data Analytics Trainee  
+  “Automated analytical workflows and prepared ML-ready datasets.”
+
+• Fada Tech Initiative — Tech & Innovation Leader  
+  “Led AI-driven community projects and digital innovation.”
+
+• GDSC — Technical Project Management Member  
+  “Helped coordinate student AI and tech projects.”
+
+No long descriptions. Keep everything simple and resume-like.
+
+===========================
+7) PROJECTS (Use ONLY CV Projects, 1-Line Descriptions)
+===========================
+Create modern cards with:
+Title + Short line + Tech stack
+
+Projects to include:
+
+• MQSD – AI-Powered Trip Planner  
+  “LLM-based travel itinerary generator.”  
+  Tech: Flask, OpenAI, Python
+
+• Modern Data Pipeline (dbt + Snowflake)  
+  “ELT pipeline with raw → staging → marts modeling.”  
+  Tech: Snowflake, dbt, SQL
+
+• Heart Disease Prediction  
+  “ML model predicting heart-disease risk.”  
+  Tech: scikit-learn, Python
+
+• Parkinson’s Voice Classification  
+  “Detects Parkinson’s using voice features.”  
+  Tech: Python, ML
+
+• Fashion-MNIST Classifier  
+  “CNN model for clothing image recognition.”  
+  Tech: TensorFlow, Keras
+
+Only show these 5. Keep each one very clean and short.
+
+===========================
+8) CONTACT SECTION
+===========================
+Simple, light, minimal:
+
+• Name  
+• Email  
+• Message  
+• Show social icons: GitHub + LinkedIn
+
+No extra text.
+
+===========================
+9) DESIGN REQUIREMENTS
+===========================
+• Layout must feel modern and premium (light gradients / soft blues).  
+• No dark mode.  
+• No animations except subtle fade/slide.  
+• Consistent spacing, clear sections, simple navigation.  
+• Entire site must look like a refined, minimal résumé website — not heavy, not empty.
+
+===========================
+Build the website now using these exact instructions.

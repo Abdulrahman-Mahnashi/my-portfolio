@@ -1,0 +1,92 @@
+Design a clean, modern, minimal personal portfolio website for **Abdulrahman Mahnashi** (Data & AI Engineer). 
+The design must be very simple, lightweight, and not overloaded with text. 
+Use only essential information similar to a CV, with short sections and clean spacing.
+
+==========================
+1) OVERALL STYLE
+==========================
+• Use a **light theme** (white + light gray background).
+• Color palette:
+  - Primary: #3A86FF (soft blue)
+  - Secondary: #6C63FF (light purple)
+  - Neutrals: #F5F7FA (background), #1E293B (text)
+  - Accent: #FFA726 (soft warm orange)
+• Layout: very minimal, lots of white space, no heavy graphics.
+• Keep everything simple and elegant like Apple's website but lighter.
+• Rounded cards, soft shadows, no gradients unless extremely subtle.
+
+==========================
+2) CONTENT STYLE (IMPORTANT)
+==========================
+• KEEP ALL TEXT SHORT.
+• DO NOT add long paragraphs.
+• Use brief CV-style information only.
+• Remove any complicated storytelling or case studies.
+• No heavy timelines, no long descriptions.
+
+==========================
+3) SECTIONS (KEEP THEM VERY SIMPLE)
+==========================
+
+### HERO
+• Light background.
+• Title: "Abdulrahman Mahnashi"
+• Subtitle: "Data & AI Engineer"
+• 1 short sentence only:
+  "I build clean data pipelines and practical AI solutions."
+• Buttons:
+  - "My Work"
+  - "Download CV"
+
+### ABOUT (very small section)
+Simple 3–4 bullet points only:
+• Data & AI Engineer based in Riyadh  
+• Specialized in dbt, Snowflake, SQL, Python  
+• Experience in AI/ML, GenAI, and ELT  
+• CS Graduate (2025)
+
+### SKILLS (simple tags)
+Show small chips, not big cards:
+Python • SQL • dbt • Snowflake • ETL/ELT • Machine Learning • Power BI • LLMs • Git • Flask
+
+### PROJECTS (ONLY 3 SHORT CARDS)
+Each card includes:
+- Project title
+- One-line description
+- Small tech stack labels
+
+Projects:
+1) MQSD – AI Trip Planner  
+   "LLM-based itinerary generator using Flask + OpenAI."
+
+2) Modern Data Pipeline  
+   "dbt + Snowflake ELT models with clean raw → staging → marts flow."
+
+3) Heart Disease ML Model  
+   "Prediction model using scikit-learn."
+
+### EXPERIENCE (very short)
+Use **simple list**, no timeline:
+
+• NOZOM – Data & Enterprise Architecture Intern  
+• STC – AI & Data Analytics Trainee  
+• Fada Tech – Tech & Innovation Leader  
+
+Keep each job to **one short line only**, no details.
+
+### CONTACT
+Simple clean form with:
+Name – Email – Message  
+Include small links for GitHub + LinkedIn.
+
+==========================
+4) RULES
+==========================
+• Do NOT add long text anywhere.  
+• Do NOT add many sections.  
+• Do NOT add complex visuals or dashboards.  
+• Make everything clean, light, and minimal.
+• The final website should feel peaceful, airy, and uncluttered.
+
+==========================
+Build a beautiful, modern, light-mode portfolio based on this.

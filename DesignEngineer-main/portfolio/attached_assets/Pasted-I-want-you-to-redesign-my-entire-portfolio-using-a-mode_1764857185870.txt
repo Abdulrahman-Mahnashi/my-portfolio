@@ -1,0 +1,158 @@
+I want you to redesign my entire portfolio using a modern, premium dark aesthetic similar to high-end Saudi developer portfolios. 
+Use a dark navy background and neon-accent colors like the sample design shown.
+
+==========================
+1) COLOR SYSTEM (IMPORTANT)
+==========================
+Use these EXACT colors:
+
+• Background: #0D1117 (dark navy)
+• Card Background: #111827 (deep blue-gray)
+• Primary Accent: #2DD4BF (aqua/mint)
+• Secondary Accent: #3B82F6 (soft neon blue)
+• Gradient Accent (very soft, subtle): linear-gradient(90deg, #2DD4BF 0%, #3B82F6 100%)
+• Text Primary: #F1F5F9 (off-white)
+• Text Secondary: #CBD5E1 (cool gray)
+• Icons: soft neon glow using #2DD4BF and #3B82F6
+• Button Hover: slight glow + brighter accent
+
+This palette must look **calm, elegant, not flashy, not too bright**.
+
+==========================
+2) OVERALL STYLE
+==========================
+• Keep everything minimal and professional.
+• NO colorful backgrounds.
+• NO cartoonish graphics.
+• Use clean line icons, subtle neon edges.
+• Rounded corners, soft shadows.
+• Add floating bubble animations like the reference site (small, subtle, slow).
+
+==========================
+3) ANIMATIONS (LIGHT + SMOOTH)
+==========================
+Add classy interactions:
+• Hero text fade-in + slight upward motion.
+• Floating circle particles behind avatar (slow movement).
+• Project cards lift slightly with soft neon edge on hover.
+• Skills chips glow softly when hovered.
+• Section titles slide in from bottom with fade.
+• Contact section buttons pulse subtly.
+
+NO big animations. Keep everything elegant.
+
+==========================
+4) HERO SECTION (SHORT, CLEAN)
+==========================
+Replace content with:
+
+Name: **Abdulrahman Mahnashi**
+Title: **Data & AI Engineer**
+Short tagline:
+“Building AI models and modern Data Pipelines.”
+
+Underneath, add 3 minimal emoji/icons:
+💻  •  📊  •  🤖
+
+Add two buttons:
+• Primary: “View Projects”
+• Secondary: “Download CV”
+
+Use aqua-neon border + soft blue glow like the sample website.
+
+==========================
+5) ABOUT SECTION (VERY SIMPLE)
+==========================
+Use short CV-style bullets only:
+
+• Data & AI Engineer based in Riyadh  
+• CS Graduate (AI Track), class of 2025  
+• Experience in AI, ML, GenAI, and Snowflake/dbt pipelines  
+• Skilled in Python, SQL, TensorFlow, scikit-learn  
+• Worked on AI models + clean ELT workflows  
+
+Keep layout like the reference:  
+• bullet list on the left  
+• image or avatar on the right with neon circular frame
+
+==========================
+6) SKILLS SECTION
+==========================
+Show skills as glowing rounded chips.
+
+Categories:
+
+**AI & ML:** TensorFlow, Keras, scikit-learn, LLMs  
+**Data Engineering:** dbt, Snowflake, ETL/ELT, SQL, Kimball  
+**Programming:** Python, SQL, Java  
+**Tools:** Flask, Git/GitHub, APIs, Jupyter  
+
+Hover effect: small glow + slight scale.
+
+==========================
+7) PROJECTS SECTION
+==========================
+Use card layout identical to the sample style:
+
+Card design:
+• dark background  
+• neon border glow on hover  
+• minimal icon in the corner  
+
+Projects list:
+
+1) MQSD – AI Trip Planner  
+   “LLM-based itinerary generator.”  
+   Tech: Python, Flask, OpenAI
+
+2) Modern Data Pipeline (dbt + Snowflake)  
+   “Raw → staging → marts ELT modeling.”  
+   Tech: dbt, Snowflake, SQL
+
+3) Heart Disease Prediction  
+   “ML risk prediction model.”  
+   Tech: scikit-learn
+
+4) Parkinson's Voice Classification  
+   “Voice-based ML detection.”  
+   Tech: Python
+
+Keep them clean and consistent.
+
+==========================
+8) EXPERIENCE SECTION
+==========================
+Simple vertical cards:
+
+• NOZOM — AI & Data Engineering Intern  
+  “Improved AI models + Snowflake/dbt pipelines.”
+
+• STC — AI & Analytics Trainee  
+  “Automated data tasks + prepared ML datasets.”
+
+• Fada Tech — Tech & Innovation Leader  
+  “Led AI & community tech projects.”
+
+Neon left-border glow on hover.
+
+==========================
+9) CONTACT SECTION
+==========================
+Use same style as sample:
+
+• Email box  
+• Phone box  
+• CTA button: “Send Me a Message”  
+
+Add neon icons + soft hover glow.
+
+==========================
+10) RULES
+==========================
+• Match the vibe, colors, and cleanliness of the reference screenshots.  
+• Keep text minimal — short like CV.  
+• Use dark background + neon aqua/blue combination.  
+• Keep animations subtle and elegant.  
+• No bright gradients, no harsh colors.
+
+Build the full design now using these instructions.

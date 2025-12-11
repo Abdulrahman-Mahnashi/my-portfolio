@@ -1,0 +1,364 @@
+You are a senior product designer + full-stack engineer building a **completely custom, non-template** personal portfolio in Lovable.dev.
+
+⚠️ IMPORTANT CONSTRAINTS
+- Do NOT use any typical Lovable layout or preset. No generic centered hero + 3-column cards.
+- Design a **distinctive, premium portfolio** that feels like a crafted product, not a template.
+- Stack: Next.js (or React), TypeScript, Tailwind CSS, and Framer Motion (or similar) for animations.
+- The site must be fully responsive (mobile-first, then tablet, then desktop).
+- Language: main content in EN. Prepare the structure so Arabic can be added later (by centralizing all strings in a simple translation object).
+
+========================================
+1) PERSONA & BRAND
+========================================
+
+Build this portfolio for:
+
+Name: **Abdulrahman Mahnashi**  
+Title: **Data & AI Engineer | Machine Learning & Modern Data Pipelines**  
+Location: Riyadh, Saudi Arabia  
+Email: **abdalrhmanmanashny@gmail.com**  
+Phone: **+966532112101**  
+GitHub: **https://github.com/Abdulrahman-Mahnashi**  
+LinkedIn: **https://www.linkedin.com/in/abdulrahman-mahnashi**  
+
+Short bio (use this almost verbatim, you may slightly polish phrasing but keep meaning):
+
+> I’m Abdulrahman Mahnashi, a Data & AI Engineer specializing in modern data pipelines, ELT workflows, and AI-powered applications. I combine dbt, Snowflake, SQL, and Python to deliver analysis-ready datasets, and integrate Machine Learning and Generative AI (LLMs) to turn governed data into real, actionable insights. I enjoy building scalable systems, solving complex problems, and applying AI and data engineering to create meaningful impact.
+
+Abdulrahman is:
+- CS graduate (2025) with AI track.
+- Experienced with dbt, Snowflake, ETL/ELT, Kimball modeling, Power BI, ML, and LLM/GenAI.
+- Intern / trainee at NOZOM and STC.
+- Active in community initiatives (Fada Tech, GDSC, youth volunteering).
+
+========================================
+2) VISUAL STYLE & THEME
+========================================
+
+Goal: **premium, calm, data-driven aesthetic** that looks like a modern SaaS landing page for a data & AI engineer, not like a typical “developer portfolio”.
+
+Design directives:
+
+- Default theme: **dark, soft and minimal**, with subtle gradients and glassmorphism.
+- Color palette:
+  - Background: #020617 (very dark navy)
+  - Surface / cards: #020617 with glassmorphism (border + blur) or #020617 → #0F172A
+  - Primary Accent: #3A86FF (electric blue)
+  - Secondary Accent: #22C55E (green) for “data health / quality” visual.
+  - Supporting Accent: #F97316 (warm orange) for CTAs and small details.
+  - Text main: #E5E7EB (light gray), headers: #F9FAFB (near white).
+- Use gradients like:
+  - `background: radial-gradient(circle at top left, rgba(58,134,255,0.35), transparent 55%), radial-gradient(circle at bottom right, rgba(34,197,94,0.25), transparent 55%);`
+- Background elements:
+  - Subtle node/graph or network visual hinting at data pipelines and AI graphs.
+  - No heavy stock illustrations. Prefer abstract shapes and data-inspired patterns.
+- Typography:
+  - Heading font: e.g., “Space Grotesk” or “Sora” (bold, geometric).
+  - Body font: e.g., “Inter”.
+  - Large, confident headings with tight line-height, generous negative space.
+
+Micro-interactions:
+- Soft hover on cards (translateY, slight scale, subtle shadow).
+- Framer Motion for:
+  - Hero text slide/fade.
+  - Cards entering with staggered animation.
+  - Section titles with underline animations.
+
+========================================
+3) GLOBAL LAYOUT & ROUTING
+========================================
+
+Single-page app with section-based navigation (smooth scroll) and optional internal routes for case studies.
+
+Top navigation (sticky):
+- Logo (simple “AM” monogram or “Abdulrahman Mahnashi” text).
+- Links: [Home] [About] [Skills] [Experience] [Projects] [Case Studies] [Writing] [Contact]
+- Right side: buttons:
+  - “Download CV” (link placeholder)
+  - “Contact”
+  - Tiny toggle placeholder for future [EN | AR] language switch (not functional yet, but visually present).
+
+Sections (IDs):
+- #home
+- #about
+- #skills
+- #experience
+- #projects
+- #case-studies
+- #writing
+- #contact
+
+========================================
+4) HERO SECTION (#home)
+========================================
+
+Layout:
+- Split layout with **left content / right data visualization**.
+- Left side:
+  - Small pill: “Data & AI Engineer · Riyadh”
+  - Big heading, 2 lines max:
+    - Line 1: “Designing Data Pipelines”
+    - Line 2: “That Unlock Intelligent Products”
+  - Subheading (2 lines max):
+    > Data & AI Engineer blending modern ELT, Kimball modeling, and applied Machine Learning to turn governed data into real, product-ready insights.
+  - Bullet mini-highlights (icons + text):
+    - “Modern dbt / Snowflake ELT”
+    - “Machine Learning & GenAI”
+    - “Data Quality & Governance”
+  - Primary CTA button: “View Projects”
+  - Secondary CTA: “Download CV” (ghost button).
+- Right side:
+  - Circular or rounded-rectangle frame with:
+    - Abstract avatar / silhouette (no cartoon style).
+    - Behind it, a small “data panel” UI mock that displays:
+      - A fake metric: “Daily Orders: 12.3K”
+      - A trend line chart.
+      - A badge: “Data Quality: 99.2%”
+  - All elements use the primary/secondary palette and glassmorphism.
+
+========================================
+5) ABOUT SECTION (#about)
+========================================
+
+Purpose: show Abdulrahman’s story + philosophy.
+
+Layout:
+- Two columns:
+  - Left: text content.
+  - Right: vertical “fact cards” and a compact timeline.
+
+Content (paraphrase but keep meaning):
+
+Heading: “About Abdulrahman”  
+Subtitle: “Data & AI Engineer with an eye for systems, not just models.”
+
+Paragraphs (2–3 short):
+1) Background: CS graduate (AI track) from Jazan University (2025), focused on Machine Learning and intelligent systems.
+2) Currently blending **data engineering + AI**: building ELT pipelines in Snowflake/dbt, then layering ML and LLM use cases on top.
+3) Philosophy: values clean, well-governed data; believes AI should be explainable and tied directly to business outcomes.
+
+Fact cards on the right:
+- “Based in: Riyadh, Saudi Arabia”
+- “Degree: BSc in Computer Science (AI) – Jazan University, 2020–2025”
+- “Focus: ELT, Kimball modeling, Data Quality, ML & GenAI”
+- “Looking for: Data/AI Engineering roles & impactful projects”
+
+========================================
+6) SKILLS SECTION (#skills)
+========================================
+
+Goal: clearly show **ETL/ELT** and modern data stack as first-class citizens.
+
+Layout:
+- Section intro: “Skills & Stack”
+- Pills filter row (non-functional is okay for now): [All] [Data Engineering] [AI & ML] [Analytics] [Development] [Soft Skills]
+- Skills grouped into cards with category titles.
+
+Categories & skills (render them as nice cards or labeled chips):
+
+1) Data Engineering & ETL
+   - ETL / ELT
+   - dbt
+   - Snowflake
+   - SQL (PostgreSQL / Oracle / SQL Server)
+   - Data Modeling (Kimball: star/snowflake, SCD2)
+   - Data Quality & Lineage
+   - Data Governance (DAMA-DMBOK)
+   - Metadata & documentation
+
+2) AI & Machine Learning
+   - Machine Learning (scikit-learn)
+   - Deep Learning (TensorFlow, Keras)
+   - LLMs / Generative AI
+   - Prompt Engineering
+   - ML experimentation & evaluation (Accuracy, F1, ROC-AUC, RMSE)
+   - Python ecosystem: pandas, NumPy
+
+3) Analytics & BI
+   - Power BI (DAX, RLS)
+   - Dashboard design & storytelling
+   - Exploratory data analysis
+
+4) Development & Tools
+   - Python
+   - SQL
+   - Java
+   - Flask / APIs
+   - Git / GitHub
+   - CI/CD
+   - Working with CSV / JSON / Parquet
+   - Jupyter Notebook
+
+5) People Skills
+   - Communication
+   - Problem-Solving
+   - Analytical Thinking
+   - Teamwork
+   - Adaptability
+   - Leadership & Ownership
+
+Visual rules:
+- Each category has a card with title + brief 1-sentence description.
+- Inside each card, skills displayed as rounded chips with hover state.
+
+========================================
+7) EXPERIENCE SECTION (#experience)
+========================================
+
+Use a **vertical timeline** with cards alternating left/right on larger screens and stacked on mobile.
+
+Entries (summarize in concise bullet points):
+
+1) NOZOM — Software Engineering Intern (Tamheer) — Data & Enterprise Architecture  
+   Location: Riyadh, Saudi Arabia — Aug 2025 – Present  
+   - Modeled raw, staging, and marts layers in Snowflake using dbt and Kimball.
+   - Automated and optimized SQL/ELT pipelines feeding KPI dashboards.
+   - Helped define data standards, lineage, and governance.
+   - Monitored SLAs and data quality KPIs.
+
+2) STC — AI & Data Analytics Cooperative Trainee  
+   Jun 2024 – Aug 2024  
+   - Automated recurring analyses and reporting.
+   - Prepared ML-ready datasets and documented source-to-target mappings.
+   - Collaborated with cross-functional teams to improve turnaround time and insights.
+
+3) Fada Tech Initiative — Co-Founder & Innovation/Tech Leader  
+   2022 – 2025  
+   - Led technology & innovation committee.
+   - Designed AI-driven community projects and workshops.
+   - Helped youth explore AI and emerging tech.
+
+4) GDSC Jazan — Technical / Project Committee Member  
+   2022 – 2023  
+   - Coordinated and supported AI-focused projects.
+   - Organized events and helped students ship technical work.
+
+Below the timeline, add a small note linking to volunteering / community contributions with a button: “Explore community work” (scrolls down to Writing/Case Studies or opens a modal).
+
+========================================
+8) PROJECTS SECTION (#projects)
+========================================
+
+Show **project cards** in a responsive grid (2–3 per row). Each card: title, short description, tech stack badges, and “View Case Study” link.
+
+Projects:
+
+1) MQSD – AI-Powered Trip Planner  
+   - Type: Senior project / LLM application  
+   - Short description: Web platform that generates personalized trip itineraries for Saudi Arabia using LLMs; includes authentication, saved trips, and shareable plans.  
+   - Tech: Python, Flask, OpenAI API, MongoDB, HTML/CSS/JS  
+
+2) Modern Data Pipeline: dbt + Snowflake  
+   - Type: Data engineering project  
+   - Short description: Built ELT pipeline with raw → staging → marts models, tests, documentation, and a fact table for daily order revenue. Automated runs and validation for analysis-ready data.  
+   - Tech: dbt, Snowflake, SQL  
+
+3) Heart Disease Prediction Model  
+   - Type: ML project  
+   - Short description: Classification model predicting heart disease risk from clinical attributes; covered preprocessing, feature engineering, model evaluation.  
+   - Tech: Python, scikit-learn, pandas, NumPy  
+
+4) Parkinson’s Voice Classification  
+   - Type: Healthcare ML  
+   - Short description: Voice-based ML model to detect Parkinson’s from voice measurements; used supervised learning and evaluation metrics.  
+   - Tech: Python, scikit-learn  
+
+5) Fashion-MNIST Deep Learning Classifier  
+   - Type: CV / DL project  
+   - Short description: CNN model trained on Fashion-MNIST to classify clothing items; improved accuracy via architecture tuning and regularization.  
+   - Tech: TensorFlow, Keras, Python  
+
+Project cards behavior:
+- Hover: raise slightly, show a subtle glow border.
+- Each has a “View Case Study” button linking to #case-studies with anchor to that project.
+
+========================================
+9) CASE STUDIES SECTION (#case-studies)
+========================================
+
+Create a section that highlights **2 deep-dive case studies**:
+
+Case Study 1: “Designing a Modern ELT Pipeline with dbt & Snowflake”  
+Structure:
+- Problem: fragmented raw data, hard to analyze.
+- Approach: staging, marts, Kimball dimensional modeling, tests, documentation.
+- Outcome: reliable `fct_daily_order_revenue`, faster analytics, clearer lineage.
+- Visuals: small diagrams or pseudo-ERD/sketch of pipeline.
+
+Case Study 2: “From Data to Itineraries: Building MQSD – AI Trip Planner”  
+Structure:
+- Problem: planning Saudi trips is time-consuming and unstructured.
+- Approach: built web platform using LLM to generate itineraries from user preferences; integrated sessions, auth, and persistence.
+- Outcome: end-to-end working product that turns user input into ready-to-use plans.
+- Visuals: UI mock cards with screens or simplified blocks.
+
+Use accordions or tabs for each case study.
+
+========================================
+10) WRITING / COMMUNITY SECTION (#writing)
+========================================
+
+Purpose: show Abdulrahman’s community and volunteering side.
+
+Layout:
+- Title: “Community, Volunteering & Learning”
+- Two columns of mini-cards:
+
+Examples:
+- “Digital Giving Initiative (Atta’a)” — Tech & training support for digital literacy.
+- “Bedar Youth Development” — Event ops, workshops, community outreach.
+- “Tamayuz Youth Association” — Admin & tech support for training programs.
+- “Badges & Learning” — Java/Python badges, KAUST AI, IBM AI, Coursera ML/Math, etc.
+
+Each card: small icon + 1–2 sentence description.
+
+========================================
+11) CONTACT SECTION (#contact)
+========================================
+
+Layout:
+- Left side: short text + direct contact info.
+- Right side: form.
+
+Content:
+Heading: “Let’s Build Something with Your Data”  
+Subheading: 
+> Whether you’re exploring modern ELT, need help designing a data model, or want to add AI features to your product, feel free to reach out.
+
+Show:
+- Email (with copy-to-clipboard icon).
+- Location: Riyadh, Saudi Arabia.
+- Links: GitHub, LinkedIn buttons.
+
+Form fields:
+- Name (required)
+- Email (required)
+- Company / Organization (optional)
+- What do you want to work on? (multi-line textarea)
+- Simple anti-spam (e.g., “What is 2 + 3?”)
+
+The form doesn’t need real backend wiring; just simulate success with a toast.
+
+========================================
+12) FOOTER
+========================================
+
+Minimal footer:
+- Left: “© {currentYear} Abdulrahman Mahnashi. Data & AI Engineer.”
+- Right: small text: “Built with ♥ using a modern data & AI stack mindset.”
+
+========================================
+13) IMPLEMENTATION DETAILS
+========================================
+
+- Use Tailwind for all styling; set up a theme file (or config) with the color palette and spacing scale.
+- Create reusable components: `Section`, `Card`, `Tag`, `Timeline`, `ProjectCard`, `SkillChip`, etc.
+- Centralize all content into a `content` or `data` folder (e.g., `experience.ts`, `projects.ts`) so it is easy to maintain.
+- Prepare a simple i18n-ready structure:
+  - e.g., `const copy = { en: { ... }, ar: { ... } }` even if only `en` is filled for now.
+- Ensure good accessibility: semantic HTML, aria-labels, focus states, sufficient contrast.
+- Verify responsive behavior on 3 sizes: mobile (≤640px), tablet (~768–1024px), desktop (≥1280px).
+
+Finally:
+- Make the overall feel **exclusive, minimal, and product-grade**, not like a typical developer portfolio or a standard Lovable preset.
+- Every section must clearly communicate Abdulrahman’s identity as a **Data & AI Engineer who owns the full journey: data → pipelines → models → insights**.
