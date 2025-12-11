@@ -29,21 +29,21 @@ const certificates = [
 
 export function Certificates() {
   return (
-    <section id="certificates" className="py-24 bg-background">
-      <div className="container mx-auto px-6 max-w-6xl">
+    <section id="certificates" className="py-12 sm:py-16 md:py-24 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16"
+          className="mb-8 sm:mb-12 md:mb-16"
         >
-          <h3 className="text-3xl font-display font-bold text-white mb-2 flex items-center gap-3">
-            <span className="w-10 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"/>
+          <h3 className="text-2xl sm:text-3xl font-display font-bold text-foreground mb-2 flex items-center gap-2 sm:gap-3">
+            <span className="w-6 sm:w-10 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"/>
             Certificates & Training
           </h3>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
           {certificates.map((cert, index) => {
             // Links for certificates
             const certLink = cert.title === "Advanced Artificial Intelligence" && cert.provider === "KAUST Academy"

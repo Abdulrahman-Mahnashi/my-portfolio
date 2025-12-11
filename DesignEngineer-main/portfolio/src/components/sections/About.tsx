@@ -12,9 +12,9 @@ const items = [
 
 export function About() {
   return (
-    <section id="about" className="py-24 relative bg-background">
-      <div className="container mx-auto px-6 max-w-5xl">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+    <section id="about" className="py-12 sm:py-16 md:py-24 relative bg-background">
+      <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
           {/* Left: Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -22,12 +22,12 @@ export function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-3xl font-display font-bold text-foreground mb-8 flex items-center gap-3">
-              <span className="w-10 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"/>
+            <h3 className="text-2xl sm:text-3xl font-display font-bold text-foreground mb-6 sm:mb-8 flex items-center gap-2 sm:gap-3">
+              <span className="w-6 sm:w-10 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"/>
               About Me
             </h3>
             
-            <ul className="space-y-5">
+            <ul className="space-y-3 sm:space-y-5">
               {items.map((item, i) => (
                 <motion.li 
                   key={i} 
@@ -35,7 +35,7 @@ export function About() {
                   whileInView={{ opacity: 1, x: 0, rotateX: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1, duration: 0.6, ease: "easeOut" }}
-                  className="flex items-start text-foreground font-medium text-lg group cursor-pointer"
+                  className="flex items-start text-foreground font-medium text-base sm:text-lg group cursor-pointer"
                   whileHover={{
                     x: 10,
                     scale: 1.02,
@@ -74,7 +74,7 @@ export function About() {
             style={{ perspective: 1000 }}
           >
             <motion.div
-              className="relative w-72 h-72 md:w-80 md:h-80"
+              className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80"
               whileHover={{
                 scale: 1.1,
                 rotateY: 15,

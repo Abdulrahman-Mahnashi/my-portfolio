@@ -41,7 +41,7 @@ export function Navbar() {
           : "bg-transparent py-6"
       }`}
     >
-      <div className="container mx-auto px-6 flex items-center justify-between">
+      <div className="container mx-auto px-4 sm:px-6 flex items-center justify-between">
         <ScrollLink
           to="home"
           smooth={true}

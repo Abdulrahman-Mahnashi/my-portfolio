@@ -46,21 +46,21 @@ const skillCategories = [
 
 export function Skills() {
   return (
-    <section id="skills" className="py-24 bg-background">
-      <div className="container mx-auto px-6 max-w-5xl">
+    <section id="skills" className="py-12 sm:py-16 md:py-24 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16"
+          className="mb-8 sm:mb-12 md:mb-16"
         >
-          <h3 className="text-3xl font-display font-bold text-white mb-2 flex items-center gap-3">
-            <span className="w-10 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"/>
+          <h3 className="text-2xl sm:text-3xl font-display font-bold text-foreground mb-2 flex items-center gap-2 sm:gap-3">
+            <span className="w-6 sm:w-10 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"/>
             Skills
           </h3>
         </motion.div>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
           {skillCategories.map((group, index) => (
             <motion.div
               key={index}
@@ -68,7 +68,7 @@ export function Skills() {
               whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.8, ease: "easeOut" }}
-              className="bg-card p-6 rounded-2xl border border-border relative overflow-hidden group"
+              className="bg-card p-4 sm:p-6 rounded-2xl border border-border relative overflow-hidden group"
               style={{
                 transformStyle: 'preserve-3d',
                 background: 'linear-gradient(135deg, rgba(17, 24, 39, 0.9) 0%, rgba(13, 17, 23, 0.9) 100%)',

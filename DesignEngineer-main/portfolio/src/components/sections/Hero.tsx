@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-[90vh] flex items-center justify-center pt-20 overflow-hidden bg-background"
+      className="relative min-h-[85vh] sm:min-h-[90vh] flex items-center justify-center pt-16 sm:pt-20 pb-8 sm:pb-0 overflow-hidden bg-background"
       style={{
         background: `
           radial-gradient(circle at 20% 50%, rgba(45, 212, 191, 0.15) 0%, transparent 50%),
@@ -57,8 +57,8 @@ export function Hero() {
         ))}
       </div>
 
-      {/* 3D Gradient Orbs */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      {/* 3D Gradient Orbs - Hidden on mobile */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:block">
         <motion.div
           animate={{
             x: [0, 100, 0],
@@ -70,7 +70,7 @@ export function Hero() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="absolute top-20 left-20 w-96 h-96 rounded-full blur-3xl opacity-30"
+          className="absolute top-20 left-20 w-64 md:w-96 h-64 md:h-96 rounded-full blur-3xl opacity-30"
           style={{
             background: 'radial-gradient(circle, rgba(45, 212, 191, 0.4) 0%, transparent 70%)',
           }}
@@ -87,7 +87,7 @@ export function Hero() {
             ease: "easeInOut",
             delay: 2,
           }}
-          className="absolute bottom-20 right-20 w-96 h-96 rounded-full blur-3xl opacity-30"
+          className="absolute bottom-20 right-20 w-64 md:w-96 h-64 md:h-96 rounded-full blur-3xl opacity-30"
           style={{
             background: 'radial-gradient(circle, rgba(59, 130, 246, 0.4) 0%, transparent 70%)',
           }}
@@ -105,7 +105,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 50, rotateX: -90 }}
             animate={{ opacity: 1, y: 0, rotateX: 0 }}
             transition={{ delay: 0.2, duration: 1, ease: "easeOut" }}
-            className="text-5xl md:text-7xl font-display font-bold mb-6 tracking-tight leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-display font-bold mb-4 md:mb-6 tracking-tight leading-tight px-2"
             style={{
               background: 'linear-gradient(135deg, #ffffff 0%, #2DD4BF 50%, #3B82F6 100%)',
               WebkitBackgroundClip: 'text',
@@ -122,7 +122,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
-            className="text-2xl md:text-3xl text-primary font-medium mb-4"
+            className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-primary font-medium mb-3 md:mb-4 px-2"
           >
             Data & AI Engineer
           </motion.h2>
@@ -131,16 +131,16 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="text-xl text-muted-foreground font-light mb-8 leading-relaxed"
+            className="text-base sm:text-lg md:text-xl text-muted-foreground font-light mb-6 md:mb-8 leading-relaxed px-4"
           >
-            “Building AI models and modern Data Pipelines.”
+            "Building AI models and modern Data Pipelines."
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.5, duration: 0.5 }}
-            className="flex justify-center gap-8 text-4xl mb-10"
+            className="flex justify-center gap-4 sm:gap-6 md:gap-8 text-2xl sm:text-3xl md:text-4xl mb-6 md:mb-10"
           >
             {['💻', '📊', '🤖'].map((emoji, i) => (
               <motion.span
@@ -187,7 +187,7 @@ export function Hero() {
               >
                 <Button
                   size="lg"
-                  className="bg-transparent border-2 border-primary text-primary hover:bg-primary/20 hover:text-primary-foreground rounded-full px-10 h-14 text-lg relative overflow-hidden group"
+                  className="bg-transparent border-2 border-primary text-primary hover:bg-primary/20 hover:text-primary-foreground rounded-full px-6 sm:px-8 md:px-10 h-12 sm:h-14 text-sm sm:text-base md:text-lg relative overflow-hidden group w-full sm:w-auto"
                   style={{
                     boxShadow: '0 0 30px rgba(45, 212, 191, 0.4), inset 0 0 30px rgba(45, 212, 191, 0.1)',
                   }}
@@ -223,7 +223,7 @@ export function Hero() {
               <Button
                 variant="outline"
                 size="lg"
-                className="bg-card border-2 border-secondary text-foreground hover:border-secondary hover:text-secondary rounded-full px-10 h-14 text-lg relative overflow-hidden group"
+                className="bg-card border-2 border-secondary text-foreground hover:border-secondary hover:text-secondary rounded-full px-6 sm:px-8 md:px-10 h-12 sm:h-14 text-sm sm:text-base md:text-lg relative overflow-hidden group w-full sm:w-auto"
                 style={{
                   boxShadow: '0 0 30px rgba(59, 130, 246, 0.3), inset 0 0 30px rgba(59, 130, 246, 0.1)',
                 }}

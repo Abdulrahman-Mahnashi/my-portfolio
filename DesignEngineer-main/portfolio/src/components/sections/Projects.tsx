@@ -186,7 +186,7 @@ const dataEngineeringProjects = [
 
 function ProjectGrid({ items }: { items: typeof aiProjects }) {
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
       {items.map((project, index) => (
         <motion.div
           key={project.title}
@@ -200,11 +200,11 @@ function ProjectGrid({ items }: { items: typeof aiProjects }) {
             style={{ transformStyle: "preserve-3d" }}
           >
             <Card
-                  className="h-full bg-card border-border hover:border-primary/50 hover:shadow-[0_0_20px_rgba(45,212,191,0.15)] transition-all duration-300 rounded-xl overflow-hidden group cursor-pointer flex flex-col"
+                  className="h-full bg-card border-border hover:border-primary/50 hover:shadow-[0_0_20px_rgba(45,212,191,0.15)] transition-all duration-300 rounded-lg sm:rounded-xl overflow-hidden group cursor-pointer flex flex-col"
               onClick={() => project.githubUrl && window.open(project.githubUrl, "_blank")}
             >
               {project.image && (
-                <div className="relative w-full h-48 overflow-hidden">
+                <div className="relative w-full h-36 sm:h-40 md:h-48 overflow-hidden">
                   <motion.img
                     src={project.image}
                     alt={project.title}
@@ -215,28 +215,28 @@ function ProjectGrid({ items }: { items: typeof aiProjects }) {
                   <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
               )}
-              <CardHeader className="pb-4 pt-6 px-6 flex flex-row items-start justify-between space-y-0">
-                <h4 className="font-bold text-xl text-foreground group-hover:text-primary transition-colors">
+              <CardHeader className="pb-3 sm:pb-4 pt-4 sm:pt-6 px-3 sm:px-4 md:px-6 flex flex-row items-start justify-between space-y-0 gap-2">
+                <h4 className="font-bold text-sm sm:text-base md:text-lg lg:text-xl text-foreground group-hover:text-primary transition-colors line-clamp-2 flex-1 min-w-0">
                   {project.title}
                 </h4>
-                <div className="p-2 bg-background rounded-lg border border-border group-hover:border-primary/30 transition-colors">
+                <div className="p-1.5 sm:p-2 bg-background rounded-lg border border-border group-hover:border-primary/30 transition-colors flex-shrink-0">
                   {project.githubUrl ? (
-                    <ExternalLink className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                    <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground group-hover:text-primary transition-colors" />
                   ) : (
-                    <Code2 className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                    <Code2 className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground group-hover:text-primary transition-colors" />
                   )}
                 </div>
               </CardHeader>
-              <CardContent className="px-6 pb-6 flex-grow flex flex-col justify-between">
-                <p className="text-muted-foreground text-base mb-6">
+              <CardContent className="px-3 sm:px-4 md:px-6 pb-3 sm:pb-4 md:pb-6 flex-grow flex flex-col justify-between">
+                <p className="text-muted-foreground text-xs sm:text-sm md:text-base mb-3 sm:mb-4 md:mb-6 line-clamp-3 leading-relaxed">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
                   {project.stack.map((tech) => (
                     <Badge
                       key={tech}
                       variant="outline"
-                      className="text-xs font-medium text-secondary bg-background border-border px-3 py-1 rounded-md"
+                      className="text-[10px] sm:text-xs font-medium text-secondary bg-background border-border px-2 sm:px-3 py-0.5 sm:py-1 rounded-md"
                     >
                       {tech}
                     </Badge>
@@ -244,7 +244,7 @@ function ProjectGrid({ items }: { items: typeof aiProjects }) {
                 </div>
                 {project.githubUrl && (
                   <motion.div
-                    className="mt-4 text-sm font-semibold text-primary opacity-100 flex items-center gap-2 group-hover:gap-3 transition-all"
+                    className="mt-2 sm:mt-4 text-xs sm:text-sm font-semibold text-primary opacity-100 flex items-center gap-1.5 sm:gap-2 group-hover:gap-2 sm:group-hover:gap-3 transition-all"
                     animate={{
                       x: [0, 5, 0],
                     }}
@@ -254,8 +254,8 @@ function ProjectGrid({ items }: { items: typeof aiProjects }) {
                       ease: "easeInOut",
                     }}
                   >
-                    <ExternalLink className="w-4 h-4" />
-                    <span className="underline decoration-2 underline-offset-4">View on GitHub</span>
+                    <ExternalLink className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0" />
+                    <span className="underline decoration-2 underline-offset-2 sm:underline-offset-4">View on GitHub</span>
                     <motion.span
                       animate={{
                         x: [0, 5, 0],
@@ -265,6 +265,7 @@ function ProjectGrid({ items }: { items: typeof aiProjects }) {
                         repeat: Infinity,
                         ease: "easeInOut",
                       }}
+                      className="flex-shrink-0"
                     >
                       →
                     </motion.span>
@@ -281,35 +282,35 @@ function ProjectGrid({ items }: { items: typeof aiProjects }) {
 
 export function Projects() {
   return (
-    <section id="projects" className="py-24 bg-background">
-      <div className="container mx-auto px-6 max-w-6xl">
+    <section id="projects" className="py-12 sm:py-16 md:py-24 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="mb-10"
         >
-          <h3 className="text-3xl font-display font-bold text-white mb-2 flex items-center gap-3">
-            <span className="w-10 h-1 bg-gradient-to-r from-primary to-secondary rounded-full" />
+          <h3 className="text-2xl sm:text-3xl font-display font-bold text-foreground mb-2 flex items-center gap-2 sm:gap-3">
+            <span className="w-6 sm:w-10 h-1 bg-gradient-to-r from-primary to-secondary rounded-full" />
             Projects
           </h3>
-          <p className="text-slate-300 text-xl font-semibold mt-4 mb-2">
+          <p className="text-muted-foreground text-base sm:text-lg md:text-xl font-semibold mt-3 sm:mt-4 mb-2 px-2">
             Browse projects by category: Artificial Intelligence or Data Engineering
           </p>
         </motion.div>
 
-        <Tabs defaultValue="ai" className="space-y-6">
-          <div className="flex justify-center mb-8">
-            <TabsList className="bg-transparent border-none p-0 inline-flex gap-2">
+        <Tabs defaultValue="ai" className="space-y-4 sm:space-y-6">
+          <div className="flex justify-center mb-6 sm:mb-8">
+            <TabsList className="bg-transparent border-none p-0 inline-flex gap-1.5 sm:gap-2 w-full sm:w-auto">
               <TabsTrigger 
                 value="ai" 
-                className="text-lg font-bold px-8 py-4 rounded-lg transition-all duration-200 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=inactive]:text-foreground data-[state=inactive]:bg-muted data-[state=inactive]:hover:bg-muted/80"
+                className="text-xs sm:text-sm md:text-base lg:text-lg font-bold px-3 sm:px-4 md:px-6 lg:px-8 py-2 sm:py-2.5 md:py-3 lg:py-4 rounded-lg transition-all duration-200 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=inactive]:text-foreground data-[state=inactive]:bg-muted data-[state=inactive]:hover:bg-muted/80 flex-1 sm:flex-initial"
               >
                 AI Projects
               </TabsTrigger>
               <TabsTrigger
                 value="data"
-                className="text-lg font-bold px-8 py-4 rounded-lg transition-all duration-200 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=inactive]:text-foreground data-[state=inactive]:bg-muted data-[state=inactive]:hover:bg-muted/80"
+                className="text-xs sm:text-sm md:text-base lg:text-lg font-bold px-3 sm:px-4 md:px-6 lg:px-8 py-2 sm:py-2.5 md:py-3 lg:py-4 rounded-lg transition-all duration-200 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=inactive]:text-foreground data-[state=inactive]:bg-muted data-[state=inactive]:hover:bg-muted/80 flex-1 sm:flex-initial"
               >
                 Data Engineering
               </TabsTrigger>
